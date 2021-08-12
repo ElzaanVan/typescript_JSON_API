@@ -19,13 +19,17 @@ axios.get(url).then(response => {
     const title = todo.title;
     const finished = todo.completed;
 
+    logTodo(ID, title, finished);
+});
+
+//Type annotation for each parameter
+const logTodo = (ID: number, title: string, finished: boolean) => {
     console.log(`
     The Todo with ID: ${ID}
     Has a title of: ${title}
     Is it finished? ${finished}
-    `);
-});
-
+    `)
+;}
 //Compile typescript first before running in browser tsc nameOfFile.ts
 //This will compile the TS into JavaScript
 //You can run this in your terminal by running node index.js
