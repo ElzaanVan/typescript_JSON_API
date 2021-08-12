@@ -1,0 +1,3 @@
+# This is a simple TypeScript application
+
+Just testing things out...
